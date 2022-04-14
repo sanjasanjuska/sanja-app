@@ -1,21 +1,37 @@
 .Message {
-    box-sizing:flex;
+    box-sizing: flex;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    margin: 30px;
+    align-items: flex-start;
+    margin: 20px;
+    height: 100%;
+    overflow-y: scroll;
+    padding-left: 15px;
+    ;
 }
 
-.Message__user {
+.MessageUser {
     color: black;
     font-style: italic;
     font-size: 24px;
 }
 
-.Message__text {
+.MessageText {
     border-radius: 15px;
-    background-color: blue;
     font-size: 20px;
+    background-color: burlywood;
+    color: black;
     border: 2px double yellow;
     padding: 10px;
+    max-width: 400px;
+}
+
+.Message.my {
+    align-items: flex-end;
+    padding-right: 15px;
+}
+
+.Message.my .MessageText {
+    background-color: blue;
+    color: white;
 }

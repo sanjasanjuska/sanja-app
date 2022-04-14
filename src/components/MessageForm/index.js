@@ -9,12 +9,15 @@ export default function MessageForm({ onSendMessage }) {
 
     const setMessage = (event) => {
         setState({ ...state, message: event.target.value });
+
     }
 
     const sendMessage = (event) => {
         event.preventDefault();
         onSendMessage(state);
+        setState({ message: "" });
     }
+
     return (
         <form onSubmit={sendMessage}>
             <InputElement

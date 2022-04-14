@@ -1,3 +1,9 @@
 export default function User() {
-    return "Sanja";
+    return (
+        <div className="User">
+            <span className="UserName">Sanja</span>
+        </div>
+    )
+
+
 }

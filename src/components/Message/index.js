@@ -1,17 +1,17 @@
 import User from "../User";
 import "./Message.css";
 
-export default function Message({ message }) {
+export default function Message({ message, my }) {
+
     if (message === " " || message == null) {
         return null;
     }
 
-    let className = "Message";
-
     return (
-        <div className={className}>
-            <div className="Message__user"><User /></div>
-            <div className="Message__text">{message}</div>
+        <div className={my ? "Message my" : "Message"}>
+            <div className="MessageUser">< User /></div>
+            <div className="MessageText">{message}</div>
+            <div className="MessageText"> <Message my={true} /></div>
         </div>
     );
 }
