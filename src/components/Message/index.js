@@ -8,10 +8,9 @@ export default function Message({ message, my }) {
     }
 
     return (
-        <div className={my ? "Message my" : "Message"}>
+        <div className="Message">
             <div className="MessageUser">< User /></div>
             <div className="MessageText">{message}</div>
-            <div className="MessageText"> <Message my={true} /></div>
         </div>
     );
 }

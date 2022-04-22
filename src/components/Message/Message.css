@@ -2,11 +2,11 @@
     box-sizing: flex;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     margin: 20px;
     height: 100%;
     overflow-y: scroll;
-    padding-left: 15px;
+    padding-right: 15px;
     ;
 }
 
@@ -19,19 +19,9 @@
 .MessageText {
     border-radius: 15px;
     font-size: 20px;
-    background-color: burlywood;
-    color: black;
+    background-color: blue;
+    color: white;
     border: 2px double yellow;
     padding: 10px;
     max-width: 400px;
-}
-
-.Message.my {
-    align-items: flex-end;
-    padding-right: 15px;
-}
-
-.Message.my .MessageText {
-    background-color: blue;
-    color: white;
 }
