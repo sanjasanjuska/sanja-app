@@ -1,0 +1,88 @@
+.App-chat-page--messages-field {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  height: 90vh;
+  background-color: wheat;
+  /* width: auto; */
+
+}
+
+.messages--list {
+  width: 100%;
+  margin: 0 auto;
+  list-style: none;
+  flex-grow: 1;
+  padding: 10px;
+  /*  we set overflow to add scroll only when needed - https://www.w3schools.com/css/css_overflow.asp */
+  overflow: auto;
+}
+
+.username {
+  padding: 0px 5px;
+  font-size: 16px;
+}
+
+.info--content>.avatar {
+  height: 40px;
+}
+
+.messages--message.currentMember {
+  text-align: end;
+  align-items: flex-end;
+}
+
+.currentMember .text {
+  color: #174943;
+}
+
+.messages--message {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  align-items: flex-start;
+}
+
+.messages--message>.info--content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: left;
+  align-items: center;
+}
+
+.messages--message.currentMember>.info--content {
+  display: flex;
+  flex-direction: row;
+  text-align: end;
+  justify-content: right;
+  align-items: center;
+}
+
+.message--content {
+  display: inline-block;
+  padding: 0px 0px;
+  color: rgb(18, 48, 82);
+  font-size: 16px;
+
+}
+
+li.messages--message.currentMember .text {
+  padding: 10px 45px 10px 45px;
+  margin: 0;
+  background-color: aquamarine;
+  border-radius: 20px;
+  display: flex;
+}
+
+li.messages--message p.text {
+  background-color: #174943;
+  padding: 10px 45px 10px 45px;
+  margin: 0;
+  border-radius: 20px;
+}
+
+p.text {
+  align-items: center;
+  justify-content: center;
+  color: white;
+}

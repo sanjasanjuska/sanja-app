@@ -1,0 +1,87 @@
+.login-style {
+    background-color: lightblue;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    
+  }
+  
+  .card {
+    color: black;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 360px;
+  }
+
+  .login-style-logo {
+    background-image: url(../../images/group-chat.png);
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+    height: 320px;
+    width: 400px;
+  }
+  
+  .login-style-heading {
+    font-size: 28px;
+    padding: 20px 30px;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    font-family: "Nanum Myeongjo", serif;
+  }
+  
+  .label--name {
+    display: block;
+  }
+  
+  .login-input {
+    padding: 5px;
+    border: 3px solid white;
+    width: 60%;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .label--name,
+  .avatar--text,
+  span {
+    font-size: 18px;
+  }
+  .avatar--choosen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  
+  .img--avatar-choosen {
+    height: 75px;
+  }
+  
+  .login-button {
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 16px;
+    padding: 10px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: 3px solid #f18c63;
+    cursor: pointer;
+    width: 150px;
+    transition: all 0.4s ease-in-out;
+    margin-top: 10px;
+  }
+  
+  .login-button:hover {
+    background-color: transparent;
+    color: #f18c63;
+    border: 3px solid white;
+  }
+  

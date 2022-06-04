@@ -1,22 +1,35 @@
-.InputElement {
-    position: fixed; left: 5px; bottom: 5px;
-    width: 100%;
-    
-}  
-
-.InputElement label {
-    display:flex;
-    width: 100%;
-    
-}
-
-.InputElement input {
-    border-width: 4px;
-    border-style: solid;
+.App-chat-page--input-field {
+    height: 60px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  
+  .form--message {
+    padding: 0px 0px;
+    display: flex;
+    flex-direction: row;
+    background-color: wheat;
+  }
+  
+  .input--message {
+    display: flex;
+    align-self: flex-start;
+    width: 80%;
+    height: 55px;
+    padding: 5px;
     border-radius: 10px;
-    width: calc(100% - 40px - 120px);
-    margin: 10px ;
-    height: 30px;
     font-size: 18px;
-    font-family: Trebuchet MS;
-}
+    border-color: black;
+  }
+  
+  .button--message {
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    width: 20%;
+    border-radius: 10px;
+    max-height: auto;
+    transition: all 0.4s ease-in-out;
+  }
+  

@@ -1,16 +1,38 @@
 import "./InputElement.css";
+import React, { useState } from "react";
 
-export default function InputElement({ inputProps, onChange, value }) {
+const InputElement = (props) => {
+    const [inputMessage, setInputMessage] = useState("");
+  
+    const handleChange = (event) => {
+      setInputMessage(event.target.value);
+    };
+  
+    const handleSubmitMessage = (event) => {
+      event.preventDefault();
+      setInputMessage("");
+      props.onSendMessage(inputMessage);
+    };
+  
     return (
-        <div className="InputElement">
-            <label>
-                <input
-                    {...inputProps}
-                    type="text"
-                    onChange={onChange}
-                    value={value}
-                />
-            </label>
-        </div>
-    )
-}
+      <div className="App-chat-page--input-field">
+        <form className="form--message" onSubmit={handleSubmitMessage}>
+          <input
+            className="input--message"
+            type="text"
+            id="inputMessage"
+            placeholder="Enter message here..."
+            value={inputMessage}
+            onChange={handleChange}
+            required
+          />
+          <button className="button--message" type="submit">
+            Pošalji
+          </button>
+        </form>
+      </div>
+    );
+  };
+  
+  export default InputElement;
+  

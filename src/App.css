@@ -1,15 +1,25 @@
-.App {
+.App-chat-page {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.users-list-container {
+  float: left;
+  width: 30%;
+  height: 100%;
+  border-radius: 10px;
+  border: solid black;
   text-align: center;
 }
 
-.App-header {
-  background-color: lightblue;
-  min-height: 100vh;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.users-list ul {
+  list-style: none;
+  padding: 0;
 }
 
-h1 {
-  color: wheat;
-  background-color: gray;
+.users-list ul li {
+  margin: 10px;
 }
