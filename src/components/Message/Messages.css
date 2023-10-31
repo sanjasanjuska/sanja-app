@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   padding: 10px;
-  height: 90vh;
-  background-color: wheat;
-  /* width: auto; */
-
+  width: auto;
+  height: 88vh;
+  background-image: url(../../images/chat_background.jpg);
+  background-repeat: inherit;
 }
 
 .messages--list {
@@ -14,75 +14,131 @@
   list-style: none;
   flex-grow: 1;
   padding: 10px;
-  /*  we set overflow to add scroll only when needed - https://www.w3schools.com/css/css_overflow.asp */
   overflow: auto;
 }
 
 .username {
-  padding: 0px 5px;
-  font-size: 16px;
+  font-style: italic;
+  margin: 5px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', sans-serif;
+  background-color: white;
+  border: 3px double grey;
+  border-radius: 10px;
 }
 
-.info--content>.avatar {
-  height: 40px;
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.message--content {
+  display: inline-block;
+  padding: 0px 0px;
 }
 
 .messages--message.currentMember {
   text-align: end;
   align-items: flex-end;
-}
-
-.currentMember .text {
-  color: #174943;
+  font-style: italic;
+  margin-right: 30px;
 }
 
 .messages--message {
   display: flex;
   flex-direction: column;
-  font-size: 14px;
   align-items: flex-start;
+  font-style: italic;
+  margin-left: 10px;
 }
 
-.messages--message>.info--content {
+.messages--message.currentMember .info--content {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+}
+
+.messages--message .info--content {
   display: flex;
   flex-direction: row-reverse;
   justify-content: left;
   align-items: center;
 }
 
-.messages--message.currentMember>.info--content {
-  display: flex;
-  flex-direction: row;
-  text-align: end;
-  justify-content: right;
-  align-items: center;
+.messages--message.currentMember .message--content {
+  background-color: rgb(153, 88, 153);
+  border: 4px solid white;
+  border-radius: 10px;
 }
 
-.message--content {
-  display: inline-block;
-  padding: 0px 0px;
-  color: rgb(18, 48, 82);
-  font-size: 16px;
-
+.messages--message .message--content {
+  background-color: rgba(203, 138, 73, 0.977);
+  border: 4px solid white;
+  border-radius: 10px;
 }
 
-li.messages--message.currentMember .text {
-  padding: 10px 45px 10px 45px;
+
+.messages--message.currentMember .username {
+  color: rgb(83, 32, 131);
+}
+
+.messages--message .username {
+  color: rgb(127, 73, 22);
+}
+
+.messages--message.currentMember .avatar {
+  background-color: rgb(83, 32, 131);
+}
+
+.messages--message .avatar {
+  background-color: rgb(127, 73, 22);
+}
+
+.text {
   margin: 0;
-  background-color: aquamarine;
-  border-radius: 20px;
-  display: flex;
-}
-
-li.messages--message p.text {
-  background-color: #174943;
-  padding: 10px 45px 10px 45px;
-  margin: 0;
-  border-radius: 20px;
-}
-
-p.text {
-  align-items: center;
-  justify-content: center;
+  padding: 10px 20px 5px 20px;
   color: white;
+  font-size: 18px;
+}
+
+.timestamp {
+  display: inline-block;
+  color: black;
+  font-size: 12px;
+  padding: 3px;
+}
+
+/*------- tablet -------*/
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .username {
+    font-size: 16px;
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+}
+
+/* -------------- phone ---------------- */
+@media screen and (max-width: 599px) {
+  .username {
+    font-size: 14px;
+  }
+
+  .avatar {
+    width: 35px;
+    height: 35px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
 }

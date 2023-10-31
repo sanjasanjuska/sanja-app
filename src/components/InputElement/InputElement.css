@@ -1,35 +1,75 @@
 .App-chat-page--input-field {
-    height: 60px;
-    text-align: center;
-    color: rgb(0, 0, 0);
-  }
-  
-  .form--message {
-    padding: 0px 0px;
-    display: flex;
-    flex-direction: row;
-    background-color: wheat;
-  }
-  
+  height: 60px;
+  text-align: center;
+}
+
+.form--message {
+  padding: 0px 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+.input--message {
+  display: flex;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 80%;
+  border-radius: 8px;
+  border: 3px solid rgb(62, 102, 141);
+  font-size: 18px;
+  font-style: italic;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: rgb(200, 228, 242);
+  color: rgba(60, 7, 63, 0.847);
+}
+
+.button--message {
+  align-items: flex-end;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  color: rgb(62, 102, 141);
+  width: 15%;
+  font-style: italic;
+  cursor: pointer;
+  border: 3px solid rgb(234, 105, 30);
+  background-color: rgb(248, 185, 143);
+  border-radius: 8px;
+}
+
+.button--message:hover {
+  background-color: rgb(5, 92, 92);
+  color: #f18c63;
+  border: 3px solid #f18c63;
+}
+
+/*------- tablet -------*/
+@media screen and (min-width: 600px) and (max-width: 1023px) {
   .input--message {
-    display: flex;
-    align-self: flex-start;
-    width: 80%;
-    height: 55px;
-    padding: 5px;
-    border-radius: 10px;
-    font-size: 18px;
-    border-color: black;
+    width: 75%;
+    height: 40px;
+    font-size: 16px;
   }
-  
+
   .button--message {
-    font-family: "Nanum Myeongjo", serif;
-    font-size: 18px;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    width: 20%;
-    border-radius: 10px;
-    max-height: auto;
-    transition: all 0.4s ease-in-out;
+    width: 15%;
+    height: 47px;
+    font-size: 16px;
   }
-  
+}
+
+/* -------------- phone ---------------- */
+@media screen and (max-width: 599px) {
+  .input--message {
+    width: 75%;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .button--message {
+    width: 15%;
+    height: 37px;
+    font-size: 14px;
+  }
+}

@@ -1,25 +1,7 @@
 .App-chat-page {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column;
   justify-content: space-between;
   height: 100vh;
   overflow: hidden;
-}
-
-.users-list-container {
-  float: left;
-  width: 30%;
-  height: 100%;
-  border-radius: 10px;
-  border: solid black;
-  text-align: center;
-}
-
-.users-list ul {
-  list-style: none;
-  padding: 0;
-}
-
-.users-list ul li {
-  margin: 10px;
 }

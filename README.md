@@ -10,7 +10,15 @@ This chat application is final project for front-end developer course.
 ## Instructions
 - npm install
 - npm run start
+- npm run build
 
 ## Features
-- Send messages with autor name
-- Recognizes sender from the rest of the chat members by showing the messages on the right (sender) and on the left (others)
+- enter your name
+- preview your name and color
+- send messages in real time with timestamp included
+- recognizes sender from the rest of the chat members by showing the messages on the right (sender) and on the left (others)
+- connected to Scaledrone
+
+## Images of Chat App
+![welcome page](./src/images/welcome.PNG)
+![chat page](./src/images/chat.PNG)

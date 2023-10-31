@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./index.css";
+import "./Login.css";
 
 const Login = (props) => {
   const [name, setName] = useState("");
@@ -10,7 +10,7 @@ const Login = (props) => {
   };
 
 
-  const handleSubmit = (event) => { 
+  const handleSubmit = (event) => {
     event.preventDefault();
     if (name !== "") {
       props.enterChat(name);
@@ -21,7 +21,7 @@ const Login = (props) => {
   return (
     <div className="login-style">
       <div className="login-style-logo"></div>
-      <h1 className="login-style-heading h1">
+      <h1 className="login-style-heading">
         Dobrodošli u Sanjinu chat aplikaciju!
       </h1>
       <form action="" onSubmit={handleSubmit} className="card">
