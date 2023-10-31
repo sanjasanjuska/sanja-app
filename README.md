@@ -1,5 +1,9 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5c3b30d1-eac1-42a6-af9e-2d7109612c17/deploy-status)](https://app.netlify.com/sites/sanjasanjuska-chat-app/deploys)
+
 # Chat Application
 This chat application is final project for front-end developer course.
+
+**Try it out**: https://sanjasanjuska-chat-app.netlify.app/
 
 ## Technologies Used
 - HTML
